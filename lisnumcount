@@ -1,0 +1,15 @@
+x=int(input("Enter no.of items:"))
+c=0
+lis=[]
+for i in range(x):
+    val=int(input())
+    lis.append(val)
+wan=int(input("Enter wanted item count:"))
+def co():
+    c=0
+    for v in lis:
+        if(v==wan):
+            c+=1
+            #print(c)
+    return c
+print(wan,"is in list for",co(),"times")
